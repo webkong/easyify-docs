@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>wikify, wiki for all</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="_assets/vue.css">
+  <style>
+    .app-name-link img{
+      width: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Wikify',
+      repo: 'https://github.com/webkong/easyify-docs',
+      logo:'/_media/logo.png',
+      // basePath: '/',
+      // homepage: 'https://wiki.webkong.cn/README.md',
+      loadSidebar: true,
+      autoHeader: true,
+      subMaxLevel: 2,
+      loadNavbar: true,
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [
+          '/en/',
+          '/zh-cn/'
+        ], // or 'auto'
+        placeholder: 'Type to search',
+
+        // 支持本地化
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/en/': 'Type to search'
+        },
+
+        noData: 'No Results!',
+
+        // 支持本地化
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/en/': 'No Results'
+        },
+
+        // 搜索标题的最大程级, 1 - 6
+        depth: 4
+      }
+    }
+  </script>
+  <script src="_assets/docsify.4.7.0.min.js"></script>
+  <script src="_assets/docsify.search.4.7.0.js"></script>
+  <script src="_assets/docsify-copy-code.min.js"></script>
+</body>
+
+</html>
