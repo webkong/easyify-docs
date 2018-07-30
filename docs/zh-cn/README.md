@@ -6,8 +6,8 @@
 
 ### 什么是easyify？
 
-A tool built with webapck to solve problems in front-end engineering.
-It support build Vue project and H5 project. React project is coming...
+用webpack构建的工作流工具，用来解决前端工程化的问题，支持H5项目和Vue项目的调试、打包和部署。
+未来将兼容React项目的构建。
 
 ### Feature
 
@@ -99,7 +99,7 @@ npm run help
 Usage: npm run <command> -- <options>
 
   egs: 
-  npm run server -- --type=h5 --project=test --env=dev --multi=true 
+  npm run server -- --type=h5 --project=test
   npm run server:multi -- --type=h5 --project=test
 
   Options:
