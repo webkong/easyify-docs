@@ -1,10 +1,10 @@
-![logo](../_media/logo.png)
+![logo](./_media/logo.png)
 
-![CircleCI](https://img.shields.io/circleci/project/github/webkong/easyify.svg)[![npm package](https://img.shields.io/npm/v/easyify.svg)](https://www.npmjs.com/package/easyify)![npm](https://img.shields.io/npm/l/easyify.svg)![node](https://img.shields.io/node/v/easyify.svg)![webpack](https://img.shields.io/badge/webpack-4.16+-green.svg)
+![node](https://img.shields.io/badge/node-8.11+-green.svg)![webpack](https://img.shields.io/badge/webpack-4.16+-green.svg)
 
 >A compilation tools for FE, built with webpack4.x, compile faster and smart, make work easier.
 
-### what is easyify
+### What is easyify
 
 A tool built with webapck to solve problems in front-end engineering.
 It support build Vue project and H5 project. React project is coming...
