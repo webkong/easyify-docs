@@ -25,7 +25,7 @@
 ### Installation
 
 ```bash
-clone && cd easyify
+clone https://github.com/webkong/easyify.git && cd easyify
 npm i #or yarn install
 ```
 
@@ -99,8 +99,8 @@ npm run help
 Usage: npm run <command> -- <options>
 
   egs: 
-  npm run server -- --type=h5 --project=test
-  npm run server:multi -- --type=h5 --project=test
+  npm run server -- --project=test
+  npm run server:multi -- --project=test
 
   Options:
 
