@@ -21,11 +21,12 @@ It support build Vue project and H5 project. React project is coming...
 * Gzip
 * Dll bundle
 * One-click deployment
+* Support Flow types
 
 ### Installation
 
 ```bash
-clone https://github.com/webkong/easyify.git && cd easyify
+git clone https://github.com/webkong/easyify.git && cd easyify
 
 npm i #or yarn install
 ```
