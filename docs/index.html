@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="_assets/vue.css">
   <style>
-    .app-name-link img{
+    .app-name-link img {
       width: 120px;
     }
   </style>
@@ -18,10 +18,22 @@
 <body>
   <div id="app"></div>
   <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').then(function (registration) {
+        console.log('register success');
+        console.log(registration);
+        // window.location.href = './docs/';
+      }).catch(function (err) {
+        console.log('register failed ');
+
+      })
+    }
+  </script>
+  <script>
     window.$docsify = {
       name: 'easyify',
       repo: 'https://github.com/webkong/easyify',
-      logo:'/_media/logo.png',
+      logo: '/_media/logo.png',
       // basePath: '/',
       // homepage: 'https://wiki.webkong.cn/README.md',
       // loadSidebar: true,
@@ -58,6 +70,7 @@
   <script src="_assets/docsify.4.7.0.min.js"></script>
   <script src="_assets/docsify.search.4.7.0.js"></script>
   <script src="_assets/docsify-copy-code.min.js"></script>
+  
 </body>
 
 </html>
