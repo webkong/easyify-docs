@@ -1,9 +1,7 @@
-![logo](http://easyify.webkong.cn/_media/logo.png)
+![logo](https://easyify.webkong.cn/_media/logo.png)
 
 ![CircleCI](https://img.shields.io/circleci/project/github/webkong/easyify.svg)[![npm package](https://img.shields.io/npm/v/easyify.svg)](https://www.npmjs.com/package/easyify)![npm](https://img.shields.io/npm/l/easyify.svg)![node](https://img.shields.io/node/v/easyify.svg)![webpack](https://img.shields.io/badge/webpack-4.16+-green.svg)
 
-
-[document](http://easyify.webkong.cn)
 
 >前端的开发编译工具,用webpack4x构建。编译速度更快更智能,使工作更容易。
 
