@@ -1,10 +1,13 @@
-![logo](../_media/logo.png)
+![logo](http://easyify.webkong.cn/_media/logo.png)
 
-![node](https://img.shields.io/badge/node-8.11+-green.svg)![webpack](https://img.shields.io/badge/webpack-4.16+-green.svg)
+![CircleCI](https://img.shields.io/circleci/project/github/webkong/easyify.svg)[![npm package](https://img.shields.io/npm/v/easyify.svg)](https://www.npmjs.com/package/easyify)![npm](https://img.shields.io/npm/l/easyify.svg)![node](https://img.shields.io/node/v/easyify.svg)![webpack](https://img.shields.io/badge/webpack-4.16+-green.svg)
 
->A compilation tools for FE, built with webpack4.x, compile faster and smart, make work easier.
 
-### 什么是easyify？
+[document](http://easyify.webkong.cn)
+
+>前端的开发编译工具,用webpack4x构建。编译速度更快更智能,使工作更容易。
+
+### what is easyify
 
 用webpack构建的工作流工具，用来解决前端工程化的问题，支持H5项目和Vue项目的调试、打包和部署。
 未来将兼容React项目的构建。
@@ -12,7 +15,7 @@
 ### Feature
 
 * node 8.11+
-* Webpack 4.16+
+* Webpack 4.x
 * Vue/H5 application
 * Sigle-page/Multi-page application
 * Multi-project in one repository
@@ -21,12 +24,12 @@
 * Gzip
 * Dll bundle
 * One-click deployment
-* Support Flow types
+* Flow
 
 ### Installation
 
 ```bash
-git clone https://github.com/webkong/easyify.git && cd easyify
+clone && cd easyify
 npm i #or yarn install
 ```
 
@@ -100,8 +103,8 @@ npm run help
 Usage: npm run <command> -- <options>
 
   egs: 
-  npm run server -- --project=test
-  npm run server:multi -- --project=test
+  npm run start -- --project=test
+  npm run start:multi -- --project=test
 
   Options:
 
@@ -114,8 +117,8 @@ Usage: npm run <command> -- <options>
   Commands:
 
     dll            dll bundle
-    server         development mode -- sigle-page
-    server:multi   development mode -- multi-page
+    start         development mode -- sigle-page
+    start:multi   development mode -- multi-page
     build          packaged project, env prod. -- sigle-page
     build:multi    packaged project, env prod. -- multi-page
     deploy:cli     deploy dist to s3. "npm run deploy:cli <profileName> <sourcePaht> <S3Path>"
@@ -132,7 +135,7 @@ npm run dll <options>
 #### Dev
 
 ```
-npm run server <options>
+npm run start <options>
 ```
 #### Build
 
@@ -155,7 +158,7 @@ easyify init web h5-test
 
 npm run dll -- -P=h5-test
 
-npm run server -- -P=h5-test
+npm run start -- -P=h5-test
 
 npm run build -- -P=h5-test
 
@@ -198,3 +201,17 @@ npm run deploy:cli cdn ./dist/vue-multi/ s3://shareit.cdn.app/w/test/
 
 * Unified configuration environment
 * Streamlined commands
+
+#### v1.1.6
+
+* support flow types
+
+#### v1.1.8
+
+* fix build wrong path
+* Adjust the built directory structure
+
+### v1.1.10
+
+* Fix dll packages error
+* Use multi-core compression JavaScript
