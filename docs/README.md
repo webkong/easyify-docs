@@ -1,6 +1,9 @@
-![logo](https://easyify.webkong.cn/_media/logo.png)
+![logo](http://easyify.webkong.cn/_media/logo.png)
 
 ![CircleCI](https://img.shields.io/circleci/project/github/webkong/easyify.svg)[![npm package](https://img.shields.io/npm/v/easyify.svg)](https://www.npmjs.com/package/easyify)![npm](https://img.shields.io/npm/l/easyify.svg)![node](https://img.shields.io/node/v/easyify.svg)![webpack](https://img.shields.io/badge/webpack-4.16+-green.svg)
+
+
+[document](http://easyify.webkong.cn)
 
 >A compilation tools for FE, built with webpack4.x, compile faster and smart, make work easier.
 
@@ -12,7 +15,7 @@ It support build Vue project and H5 project. React project is coming...
 ### Feature
 
 * node 8.11+
-* Webpack 4.x
+* Webpack 4.16+
 * Vue/H5 application
 * Sigle-page/Multi-page application
 * Multi-project in one repository
@@ -54,12 +57,14 @@ npm i -g easyify-cli
 
 cd <easyifyPath>/src
 
-easyify init <template> <projectName>
+easyify/ey init <template> <projectName>
 
 # template list web / vuejs
 
-easyify list # View avialable templates
-easyify help  # View help
+easyify/ey list # View avialable templates
+easyify/ey help  # View help
+
+#ey is short name for easyify
 ```
 
 
@@ -146,7 +151,7 @@ npm run build  <options>
 ```bash
 git clone <easyify repo path>
 cd src
-easyify init web h5-test
+easyify/ey init web h5-test
 ...
 # open h5-test use your code tool
 # edit config.js if necessary
