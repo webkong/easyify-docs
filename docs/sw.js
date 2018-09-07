@@ -21,9 +21,9 @@ self.addEventListener('activate', function (event) {
       // 清理旧版本
       caches.keys().then(function (cacheList) {
         return Promise.all(
-          cacheList.map(function (cacheName) {
-            if (cacheName !== cacheName) {
-              return caches.delete(cacheName);
+          cacheList.map(function (cache_Name) {
+            if (cache_Name !== cacheName) {
+              return caches.delete(cache_Name);
             }
           })
         );
