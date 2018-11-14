@@ -3,8 +3,6 @@
 ![CircleCI](https://img.shields.io/circleci/project/github/webkong/easyify.svg)[![npm package](https://img.shields.io/npm/v/easyify.svg)](https://www.npmjs.com/package/easyify)![npm](https://img.shields.io/npm/l/easyify.svg)![node](https://img.shields.io/node/v/easyify.svg)![webpack](https://img.shields.io/badge/webpack-4.16+-green.svg)
 
 
-[document](http://easyify.webkong.cn)
-
 >A compilation tools for FE, built with webpack4.x, compile faster and smart, make work easier.
 
 ### what is easyify
@@ -156,7 +154,7 @@ easyify/ey init web h5-test
 # open h5-test use your code tool
 # edit config.js if necessary
 # if need dll bundle
-# npm run dll -- -P=h5-test
+# run `npm run dll -- -P=h5-test` first.
 
 npm run dll -- -P=h5-test
 
@@ -195,25 +193,3 @@ npm run deploy:cli cdn ./dist/vue-multi/ s3://shareit.cdn.app/w/test/
 [easyify template](https://github.com/easyify)
 
 [easyify-cli](https://github.com/webkong/easyify-cli)
-
-
-### Update Logs
-
-#### v1.1.3
-
-* Unified configuration environment
-* Streamlined commands
-
-#### v1.1.6
-
-* support flow types
-
-#### v1.1.8
-
-* fix build wrong path
-* Adjust the built directory structure
-
-### v1.1.10
-
-* Fix dll packages error
-* Use multi-core compression JavaScript

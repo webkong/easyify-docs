@@ -24,14 +24,14 @@
 * One-click deployment
 * Flow
 
-### Installation
+### 安装
 
 ```bash
 clone && cd easyify
 npm i #or yarn install
 ```
 
-### Directory
+### 目录结构
 
 ```bash
 ├── README.md # readme
@@ -44,11 +44,11 @@ npm i #or yarn install
 └── src # source code folder
 ```
 
-### How to use
+### 如何使用？
 
-#### Create project
+#### 创建项目
 
->You need `easyify-cli` to create a new project quickly.You can also build the project manually, but it must conform to the folder structure.
+> 你可以使用 `easyify-cli` 来快速创建项目。也可以手动创建项目，但是目录结构要跟之前的结构一致。
 
 ```bash
 npm i -g easyify-cli
@@ -64,11 +64,12 @@ easyify help  # View help
 ```
 
 
-### Config
-change dirctory to project, `config.js` in this folder.
+### 配置
+
+进入项目目录，可以看到`config.js` 文件：
 ```javascript
 {
-  env: { // Environmental variable, can used by `process.env.NODE_ENV` `process.env.API`
+  env: { // 环境变量可以通过 `process.env.NODE_ENV` `process.env.API` 方式来使用
       prod: {
           NODE_ENV: '"production"',
           API: ''
@@ -83,15 +84,15 @@ change dirctory to project, `config.js` in this folder.
       }
   },
   vendor:[
-  ], // dll lib array
-  vue: false // is vue
-  multi: false
+  ], // 需要单独打成dll的前端库
+  vue: false // 是否是vue项目
+  multi: false // 是否是多页面项目
 }
 ```
 
-### Useage
+### 使用
 
-#### Cmmand
+#### 命令行
 
 ```
 npm run help
@@ -124,25 +125,25 @@ Usage: npm run <command> -- <options>
 
 ```
 
-#### build dll file
+#### 打包 dll 文件
 
 ```
 npm run dll <options>
 ```
 
-#### Dev
+#### 开发环境
 
 ```
 npm run start <options>
 ```
-#### Build
+#### 打正式包
 
 
 ```
 npm run build  <options>
 ```
 
-#### example
+#### 示例
 
 ```bash
 git clone <easyify repo path>
@@ -152,7 +153,7 @@ easyify init web h5-test
 # open h5-test use your code tool
 # edit config.js if necessary
 # if need dll bundle
-# npm run dll -- -P=h5-test
+# run `npm run dll -- -P=h5-test` first.
 
 npm run dll -- -P=h5-test
 
@@ -168,9 +169,9 @@ npm run build -- -P=h5-test -E=alpha
 
 
 
-### Deploy
+### 发布
 
-#### upload to aws s3
+#### 发布到亚马逊的s3桶
 
 > install AWSCLI, Configuration and Credential Files
 > [AWACLI document](https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
@@ -191,25 +192,3 @@ npm run deploy:cli cdn ./dist/vue-multi/ s3://shareit.cdn.app/w/test/
 [easyify template](https://github.com/easyify)
 
 [easyify-cli](https://github.com/webkong/easyify-cli)
-
-
-### Update Logs
-
-#### v1.1.3
-
-* Unified configuration environment
-* Streamlined commands
-
-#### v1.1.6
-
-* support flow types
-
-#### v1.1.8
-
-* fix build wrong path
-* Adjust the built directory structure
-
-### v1.1.10
-
-* Fix dll packages error
-* Use multi-core compression JavaScript
