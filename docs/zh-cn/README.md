@@ -148,22 +148,22 @@ npm run build  <options>
 ```bash
 git clone <easyify repo path>
 cd src
-easyify init web h5-test
+easyify init web test
 ...
-# open h5-test use your code tool
+# open test use your code tool
 # edit config.js if necessary
 # if need dll bundle
-# run `npm run dll -- -P=h5-test` first.
+# run `npm run dll -- -P=test` first.
 
-npm run dll -- -P=h5-test
+npm run dll -- -P=test
 
-npm run start -- -P=h5-test
+npm run start -- -P=test
 
-npm run build -- -P=h5-test
+npm run build -- -P=test
 
 or
 
-npm run build -- -P=h5-test -E=alpha
+npm run build -- -P=test -E=alpha
 
 ```
 
