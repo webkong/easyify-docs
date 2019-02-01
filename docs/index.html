@@ -26,11 +26,14 @@
 <body>
   <div id="app"></div>
   <script>
+    var cacheName = 'v3.2';
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').then(function (registration) {
-        console.log('register success');
-        console.log(registration);
-        // window.location.href = './docs/';
+        if (localStorage.getItem('sw_version') !== version) {
+          reg.update().then(function () {
+            localStorage.setItem('sw_version', version)
+          });
+        }
       }).catch(function (err) {
         console.log('register failed ');
 
@@ -78,7 +81,7 @@
   <script src="_assets/docsify.4.7.0.min.js"></script>
   <script src="_assets/docsify.search.4.7.0.js"></script>
   <script src="_assets/docsify-copy-code.min.js"></script>
-  
+
 </body>
 
 </html>
