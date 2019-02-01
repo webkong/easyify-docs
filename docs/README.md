@@ -182,8 +182,8 @@ npm run deploy:cli <profileName> <sourcePath> <s3Path>
  
 npm run deploy:cli cdn ./dist/vue-multi/ s3://shareit.cdn.app/w/test/
 
-# run commend: aws --profile cdn s3 sync ./dist/vue-multi/ s3://shareit.cdn.app/w/test/ --delete --exclude=".*"
-# sync success to s3://shareit.cdn.app/w/test/
+# run commend: aws --profile cdn s3 sync ./dist/vue-multi/ s3://s3Path --delete --exclude=".*"
+# sync success to s3://s3Path
 ```
 
 ### Other
