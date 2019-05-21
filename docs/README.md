@@ -127,7 +127,7 @@ Usage: npm run <command> -- <options>
 ```
 
 #### build dll file
-
+> You need run this command , if config option vendor is not empty.
 ```
 npm run dll <options>
 ```

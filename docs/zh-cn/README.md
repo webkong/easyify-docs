@@ -127,6 +127,8 @@ Usage: npm run <command> -- <options>
 
 #### 打包 dll 文件
 
+>当配置项vendor不为空时，要先打包dll，再启动或者编译
+
 ```
 npm run dll <options>
 ```
